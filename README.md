@@ -30,9 +30,19 @@ When you're done, call this function in the script so that the output is seen wh
 
 ### Non-void functions should return something interesting
 
+Now we're going to do something that might not have a side affect at all, since this next function will take arguments and return a value.
+
+Write a function that takes a single character and a number. Make sure the number is positive. Next make the function return a string that contains the character passed in repeated the number of times indicated in the passed in integer. For example `repeat('c', 4')` would return the string `'cccc'`.
+
 ### Overloading
 
+Remember that overloading is using the same name for a function with with different number and/or types of arguments. Also remember that the return type does not disambiguate function names, only the parameters.
+
+Write another version of the the function from above that only takes a number. Then choose a default character value, for example `'x'`, and have it return a similar string to `repeat` above.
+
 ### Default values
+
+Now factor the two versions of `repeat` so that there is only one. This time, however, use a default value to allow the same functionality as above. In other words, you should still be able to make the calls `repeat('c', 4)` and `repeat(4)`, but with only one implementation instead of two. 
 
 ### Make yourself useful
 
