@@ -26,3 +26,11 @@ def fibDyn(long x) {
 def fibClosed(long x) {
     return (BigInteger)((((1 + Math.sqrt(5)) ** x) - ((1 - Math.sqrt(5)) ** x)) / (2 ** x * Math.sqrt(5)))
 }
+
+def repeat(n, c) {
+    c.multiply(n)
+}
+println repeat(4, 'c')
+println fibRecursive(4)
+println fibDyn(4)
+println fibClosed(4)
